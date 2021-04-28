@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tip: Click on photo to enter full screen."
+                android:textSize="12sp"
+                android:textColor="@color/colorGreyText"
+                />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/my_recycler_view"
+                android:nestedScrollingEnabled="true"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:elevation="5dp"
+                android:scrollbars="none" />
+
+            <View
+                android:id="@+id/line_up"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="12dp"
+                android:layout_centerHorizontal="true"
+                android:background="@color/dark_green"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text = "Details: "
+                android:textSize="15sp"
+                android:layout_marginTop="10dp"
+            />
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                >
+
+                <RelativeLayout
+                    android:id="@+id/postedBy_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/text_postedBy"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:text = "Posted By: "
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:layout_centerVertical="true"
+                        />
+
+                    <TextView
+                        android:id="@+id/postedBy_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text = "Saurabh Singh"
+                        android:textSize="16sp"
+                        android:textColor="@color/dark_grey"
+                        android:layout_toRightOf="@id/text_postedBy"
+                        android:layout_marginLeft="30dp"
+                        android:layout_centerVertical="true"
+                        />
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/contact_layout"
+                    android:layout_below="@id/postedBy_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/text_contact"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:text = "Contact No: "
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:layout_centerVertical="true"
+                        />
+
+                    <TextView
+                        android:id="@+id/contact_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text = "8130726590"
+                        android:textSize="16sp"
+                        android:textColor="@color/dark_grey"
+                        android:layout_toRightOf="@id/text_contact"
+                        android:layout_marginLeft="30dp"
+                        android:layout_centerVertical="true"
+                        />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/foodType_layout"
+                    android:layout_below="@id/contact_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/text_foodType"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:text = "Food Type: "
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:layout_centerVertical="true"
+                        />
+
+                    <TextView
+                        android:id="@+id/foodtype_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text = "Snacks"
+                        android:textSize="16sp"
+                        android:textColor="@color/dark_grey"
+                        android:layout_toRightOf="@id/text_foodType"
+                        android:layout_marginLeft="30dp"
+                        android:layout_centerVertical="true"
+                        />
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/quantity_layout"
+                    android:layout_below="@id/foodType_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/text_quantity"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:text = "Quantity: "
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:layout_centerVertical="true"
+                        />
+
+                    <TextView
+                        android:id="@+id/quantity_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text = "2 packets"
+                        android:textSize="16sp"
+                        android:maxLines="4"
+                        android:textColor="@color/dark_grey"
+                        android:layout_toRightOf="@id/text_quantity"
+                        android:layout_marginLeft="30dp"
+                        android:layout_centerVertical="true"
+                        />
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/address_layout"
+                    android:layout_below="@id/quantity_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/text_address"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:text = "Address: "
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:layout_centerVertical="true"
+                        />
+
+                    <TextView
+                        android:id="@+id/address_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text = "C-6/54, 2nd floor, Sector- 15, Rohini, New Delhi, 110089"
+                        android:textSize="16sp"
+                        android:textColor="@color/dark_grey"
+                        android:layout_toRightOf="@id/text_address"
+                        android:layout_marginLeft="30dp"
+                        android:layout_centerVertical="true"
+                        />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/description_layout"
+                    android:layout_below="@id/address_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/text_description"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:text = "Description: "
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:layout_centerVertical="true"
+                        />
+
+                    <TextView
+                        android:id="@+id/description_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text = "2 packets of Uncle Chips available."
+                        android:textSize="16sp"
+                        android:maxLines="4"
+                        android:textColor="@color/dark_grey"
+                        android:layout_toRightOf="@id/text_description"
+                        android:layout_marginLeft="30dp"
+                        android:layout_centerVertical="true"
+                        />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>

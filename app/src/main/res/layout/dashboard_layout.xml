@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/dashboard_frag_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp"
+        android:paddingLeft="8dp"
+        android:scrollbars="vertical"
+        />
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:id="@+id/empty_placeholder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        >
+
+        <ImageView
+            android:layout_centerHorizontal="true"
+            android:id="@+id/empty_image"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_restaurant_black_24dp"
+            android:tint="@color/dark_grey"
+            android:layout_gravity="center_vertical"
+            />
+
+        <TextView
+            android:layout_below="@id/empty_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sorry, No Food Available!!"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/colorGreyText"
+            />
+
+
+    </RelativeLayout>
+
+    <ProgressBar
+        android:visibility="gone"
+        android:id="@+id/dashboard_progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"/>
+</RelativeLayout>

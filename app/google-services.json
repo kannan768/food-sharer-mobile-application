@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "1085260247533",
+    "firebase_url": "https://refood-335da.firebaseio.com",
+    "project_id": "refood-335da",
+    "storage_bucket": "refood-335da.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1085260247533:android:e6ef722eba503552",
+        "android_client_info": {
+          "package_name": "com.appsomniac.refood"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1085260247533-0sad58p379jl3i35ivkrhr7sdv220uc4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.appsomniac.refood",
+            "certificate_hash": "ea0311393c454fc359f0bebe55396a206538b39b"
+          }
+        },
+        {
+          "client_id": "1085260247533-o6kmv2nt5u1a8lpvdn3djogmefsn46qq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB_484lExfhk03MUjrl76EgmTelJaa6jpE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1085260247533-o6kmv2nt5u1a8lpvdn3djogmefsn46qq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

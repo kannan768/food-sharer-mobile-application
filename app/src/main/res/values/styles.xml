@@ -1,0 +1,78 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+    </style>
+
+    <!--<style name="SplashScreenTheme">-->
+        <!--<item name="windowActionBar">false</item>-->
+        <!--<item name="windowNoTitle">true</item>-->
+        <!--<item name="colorPrimaryDark">@color/white</item>-->
+    <!--</style>-->
+
+    <style
+        name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="FAB">
+        <item name="android:layout_margin">0dp</item>
+        <item name="fabSize">normal</item>
+        <item name="rippleColor">@android:color/white</item>
+        <item name="backgroundTint">@color/colorPrimary</item>
+    </style>
+
+    <style name="Widget">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="Widget.Label">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="Widget.BigTitle">
+        <item name="android:textSize">22sp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+
+    <style name="Widget.ToolbarText">
+        <item name="android:textSize">18sp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:color">@color/white</item>
+    </style>
+
+    <style name="ButtonStyle">
+        <item name="android:textSize">@dimen/header_text</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/bg_cta_button</item>
+        <item name="android:clickable">true</item>
+    </style>
+
+    <style name="proceedButtonStyle">
+        <item name="android:textSize">@dimen/header_text</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/button_selector</item>
+        <item name="android:clickable">true</item>
+    </style>
+
+</resources>
